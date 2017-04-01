@@ -1,0 +1,9 @@
+---
+
+applications:
+
+- name : yh-nodeserver
+
+  instances : 1
+
+  memory : 256M
