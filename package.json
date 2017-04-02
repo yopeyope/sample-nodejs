@@ -9,6 +9,7 @@
   "author": "yohheihagio",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "ibmiotf": "^0.2.33"
   }
 }
