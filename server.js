@@ -25,13 +25,12 @@ var responseString = 'Hello Coursera';
 var appClient = new iotf.IotfApplication(appConfig);
 
 app.get('/', function(req, res) {
-    res.send('Hello Coursera');
+    res.send(responseString);
 });
 
 var server = app.listen(serverPort, serverHost, function() {
-    var host = server.address().address;
     var port = server.address().port;
-    console.log('Listening at http://%s:%s', host, port);
+    console.log('Listening on port : %s', port);
 
     appClient.connect();
 
@@ -43,6 +42,5 @@ var server = app.listen(serverPort, serverHost, function() {
         responseString = "Device event at " + new Date().toString() + " from " + deviceType +
                           ":" + deviceId + "; event = "+ eventType +", payload = " + payload;
     });
-
 
 });

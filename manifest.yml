@@ -10,4 +10,4 @@ applications:
 
 services:
 
-- Internet of Things Platform-o4
+- yope-nodered-sample-iotf-service
